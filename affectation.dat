@@ -1,0 +1,25 @@
+ID        Nom                 Prenom              Poste               SalaireIDTDepartement               Region
+59050287   Solange              Oliveur              Mecanicien           1200. 059 Nord                    Hauts-de-France
+59050243   Matt                 Ador                 Gerant               5050. 069 Rhone                   Auvergne-Rhone-Alpes
+59044257   Sophie               Stique               Mascote              0800. 001 Ain                     Auvergne-Rhone-Alpes
+59042524   Emma                 Tome                 Animateur            0800. 038 Isere                   Auvergne-Rhone-Alpes
+59046804   Theo                 Jasmin               Chef de projet       5000. 038 Isere                   Auvergne-Rhone-Alpes
+59049142   Tergeist             Jean-Paul            Coboliste            6000. 038 Isere                   Auvergne-Rhone-Alpes
+59048209   Doiseau              Denis                Magasinier           1200. 069 Rhone                   Auvergne-Rhone-Alpes
+59044600   Bonnie               Clive                Assistante           1200. 059 Nord                    Hauts-de-France
+59042808   Nete                 Marion               Directrice           9250. 059 Nord                    Hauts-de-France
+59042817   Castaldi             Marc                 Sindicaliste         0010. 059 Nord                    Hauts-de-France
+59044074   Times                Vincent              Chaffeur             2000. 072 Sarthe                  Pays de la Loire
+59040503   Mobil                Otto                 Carleur              2000. 010 Aube                    Grand Est
+59040472   Mouss                Tik                  Peintre              1500. 011 Aude                    Occitanie
+59047861   Lami                 Molette              Peintre              1500. 012 Aveyron                 Occitanie
+59046848   Dupont               Marie                Assistante           0800. 013 Bouches-du-Rhone        Provence-Alpes-Cote d Azur
+59045187   Ford                 Henry                Magasinier           1200. 014 Calvados                Normandie
+59041371   Musk                 Leon                 Javaliste            4000. 015 Cantal                  Auvergne-Rhone-Alpes
+59041376   Micron               Louis                Javaliste            4000. 016 Charente                Nouvelle-Aquitaine
+59045610   Pompel               Xavier               Javaliste            4000. 017 Charente-Maritime       Nouvelle-Aquitaine
+59045589   Zigomar              Juan                 Chaffeur             2000. 018 Cher                    Centre-Val de Loire
+_________________________________________________________________________________________________________________________________________
+La somme des salaires de tous les employés est de :
+53510,00€
+_________________________________________________________________________________________________________________________________________
