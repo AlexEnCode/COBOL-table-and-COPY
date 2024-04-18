@@ -9,12 +9,10 @@
                
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
-           SELECT REC-ASSU ASSIGN TO 'assurances.dat'
-           ORGANIZATION IS LINE SEQUENTIAL
-           ACCESS MODE IS SEQUENTIAL
-           FILE STATUS IS REC-ASSU-STATUS.
 
-           SELECT RAPPORT ASSIGN TO 'rapport-assurances.dat'
+      * Identification des 3 fichiers a sauvagardé dans la table.
+
+           SELECT REC-ASSU ASSIGN TO 'assurances.dat'
            ORGANIZATION IS LINE SEQUENTIAL
            ACCESS MODE IS SEQUENTIAL
            FILE STATUS IS REC-ASSU-STATUS.
@@ -28,9 +26,17 @@
            ORGANIZATION IS LINE SEQUENTIAL
            ACCESS MODE IS SEQUENTIAL
            FILE STATUS IS REC-ASSU-STATUS2.
+     
+      * Le fichier de sortie
+           SELECT RAPPORT ASSIGN TO 'rapport-assurances.dat'
+           ORGANIZATION IS LINE SEQUENTIAL
+           ACCESS MODE IS SEQUENTIAL
+           FILE STATUS IS REC-ASSU-STATUS.
 
        DATA DIVISION.
        FILE SECTION.
+      
+      * Les lectures data des 3 fichiers
        FD REC-ASSU 
            RECORD CONTAINS 125 CHARACTERS
            RECORDING MODE IS F.
@@ -38,11 +44,6 @@
        01 FILE-REC-ASSU.           
         02 FIELD-REC-ASSU        PIC X(125).
 
-       FD RAPPORT
-           LABEL RECORDS ARE STANDARD
-           RECORDING MODE IS V.    
-
-       01  RAPPORT-ENTRY     PIC X(125).
 
        FD REC-ASSUPART1
            RECORD CONTAINS 125 CHARACTERS
@@ -58,9 +59,16 @@
        01 FILE-REC-ASSUPART2.           
         02 FIELD-REC-ASSUPART2        PIC X(125).
 
+      * déclaration du fichier de sortie
+       FD RAPPORT
+           LABEL RECORDS ARE STANDARD
+           RECORDING MODE IS V.    
+
+       01  RAPPORT-ENTRY     PIC X(125).
 
        WORKING-STORAGE SECTION.
     
+      * Variable d'algo et status
        01 REC-ASSU-STATUS      PIC X(2).
        01 REC-ASSU-STATUS1     PIC X(2).
        01 REC-ASSU-STATUS2     PIC X(2).
@@ -69,6 +77,7 @@
        01 TIMINGP2             PIC 9(2) VALUE 1.
        01 SOMMEEURO            PIC 9(10) VALUE 0.
 
+      * la table d'enregistrement pour la sortie en fichier
        01  DATATABLE.
            02 ASSURANCE  OCCURS 101 TIMES.
             03 WS-ID         PIC A(8) VALUE SPACE.
@@ -88,7 +97,8 @@
             03 WS-PRIX       PIC 9(9)  VALUE 0.  
             03 FILLER        PIC X . 
             03 EUROS        PIC X(3) VALUE "E".     
-                               
+
+      *de la déco                         
        01 TETE      PIC X(125) VALUE
            "                                         RAPPORT ASSURANCE".
        01 RAPPORT-ASSURANCE.
@@ -102,6 +112,7 @@
 
        PROCEDURE DIVISION. 
 
+      * sauvegarde du premier fichier dans le tableau
            OPEN INPUT REC-ASSU.
            SET TIMING TO 1.
             PERFORM UNTIL TIMING = 29
@@ -115,7 +126,8 @@
                END-READ  
            END-PERFORM.
            CLOSE REC-ASSU.
-  
+   
+      * mis en page pour le terminal
            DISPLAY SPACE.
            DISPLAY SPACE.                      
            DISPLAY "**************************************************".
@@ -146,6 +158,7 @@
            DISPLAY SPACE.
            DISPLAY "STATUS CODE =" REC-ASSU-STATUS.
 
+      * Enregistrement du fichier part1
            OPEN INPUT REC-ASSUPART1.
            SET TIMING TO 30.  
            PERFORM UNTIL TIMING = 66
@@ -162,6 +175,7 @@
            END-PERFORM.
            CLOSE REC-ASSUPART1.
 
+      * Enregistrement du fichier part2
            OPEN INPUT REC-ASSUPART2.
            SET TIMING TO 66.           
            PERFORM UNTIL TIMING = 102
@@ -177,11 +191,13 @@
                END-READ  
            END-PERFORM.
            CLOSE REC-ASSUPART2.
-           
+
+      * Debut de l'écriture du fichier de sortie         
            OPEN OUTPUT RAPPORT.
            CLOSE RAPPORT.
            OPEN EXTEND RAPPORT.
-
+     
+      * document assurance en écriture
              MOVE ASSURANCE(3) TO CORP(1).
              MOVE ASSURANCE(7) TO CORP(2).
              MOVE ALL '_' TO RAPPORT-ENTRY.
@@ -197,15 +213,19 @@
              MOVE ALL '-' TO RAPPORT-ENTRY.
              WRITE RAPPORT-ENTRY. 
       
-
+      * dessin de l'entete
            MOVE ALL '_' TO RAPPORT-ENTRY.
              WRITE RAPPORT-ENTRY. 
              MOVE TETEP1 TO RAPPORT-ENTRY.
              WRITE RAPPORT-ENTRY.              
              MOVE ALL '-' TO RAPPORT-ENTRY.
              WRITE RAPPORT-ENTRY. 
-           
 
+      * trie du tableau d'enregistrement      
+           SORT ASSURANCE ASCENDING
+           KEY WS-CONTRAT OF ASSURANCE.
+
+      * écriture des autres parties enregistré dans la table
            SET TIMING TO 30.
            PERFORM UNTIL TIMING = 65
                       MOVE ASSURANCE(TIMING) TO RAPPORT-ENTRY
@@ -235,17 +255,20 @@
            MOVE ALL '-' TO RAPPORT-ENTRY.
            WRITE RAPPORT-ENTRY. 
 
+      * calcul de la somme des montants
            SET TIMING TO 1
            PERFORM UNTIL TIMING =30
            ADD WS-PRIX(TIMING) TO SOMMEEURO
            ADD 1 TO TIMING
            END-PERFORM.
 
+      * écriture de la somme des montants
            MOVE "Somme des montants :" TO RAPPORT-ENTRY
            WRITE RAPPORT-ENTRY.
            MOVE SOMMEEURO TO RAPPORT-ENTRY
            WRITE RAPPORT-ENTRY. 
 
+      * fermeture du fichier de sortie
            CLOSE  RAPPORT.
 
            STOP RUN.
