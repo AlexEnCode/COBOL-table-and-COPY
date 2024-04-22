@@ -6,11 +6,13 @@ Afficher les enregistrements 3 et 7.
 En fin de fichier, afficher un message explicite sur la console.
 Veiller à la mise en forme de l'affichage.
 
+
 ## Suite du brief
 Après avoir lu et mis en forme et afficher.
 Je souhaites écrire ce que j'ai affiché en console dans un nouveau fichier.
 Nom du fichier physique : rapport-assurances.dat
 Fichier de source corrigé à récupérer sur la cohérence des données nommé assurances.dat
+
 
 ## Pour aller plus loin
 J'utilise les fichiers : assurances-part1.dat assurances-part2.dat
