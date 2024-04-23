@@ -1,0 +1,56 @@
+  -----------------------------------------------
+|             BIENVENUE A LA SNCF                |
+  -----------------------------------------------
+
+
+Nombre de trajet à venir :
+46
+
+
+Trajet à venir :
+------------------------------------------------------------------------------------------------------------------------------------
+ | Destination     :  PORTO              | Durée du trajet : 01 | Heure de depart :  20 | Heure d'arrivée : 21 Nombre d'arret  :  10
+ | Destination     :  MALAGA             | Durée du trajet : 03 | Heure de depart :  18 | Heure d'arrivée : 21 Nombre d'arret  :  06
+ | Destination     :  MONS               | Durée du trajet : 20 | Heure de depart :  01 | Heure d'arrivée : 21 Nombre d'arret  :  00
+ | Destination     :  OSLO               | Durée du trajet : 03 | Heure de depart :  24 | Heure d'arrivée : 21 Nombre d'arret  :  07
+ | Destination     :  DIEPPE             | Durée du trajet : 20 | Heure de depart :  01 | Heure d'arrivée : 21 Nombre d'arret  :  02
+ | Destination     :  GAND               | Durée du trajet : 20 | Heure de depart :  01 | Heure d'arrivée : 21 Nombre d'arret  :  03
+ | Destination     :  LISBONNE           | Durée du trajet : 03 | Heure de depart :  48 | Heure d'arrivée : 21 Nombre d'arret  :  10
+ | Destination     :  MADRID             | Durée du trajet : 11 | Heure de depart :  32 | Heure d'arrivée : 21 Nombre d'arret  :  10
+ | Destination     :  ALENCE             | Durée du trajet : 06 | Heure de depart :  15 | Heure d'arrivée : 21 Nombre d'arret  :  06
+ | Destination     :  GLASGOW            | Durée du trajet : 02 | Heure de depart :  20 | Heure d'arrivée : 22 Nombre d'arret  :  10
+ | Destination     :  LYON               | Durée du trajet : 20 | Heure de depart :  02 | Heure d'arrivée : 22 Nombre d'arret  :  00
+ | Destination     :  LILLE              | Durée du trajet : 19 | Heure de depart :  03 | Heure d'arrivée : 22 Nombre d'arret  :  04
+ | Destination     :  PARIS              | Durée du trajet : 21 | Heure de depart :  01 | Heure d'arrivée : 22 Nombre d'arret  :  00
+ | Destination     :  STRABOURG          | Durée du trajet : 19 | Heure de depart :  03 | Heure d'arrivée : 22 Nombre d'arret  :  01
+ | Destination     :  MARSEILLE          | Durée du trajet : 17 | Heure de depart :  05 | Heure d'arrivée : 22 Nombre d'arret  :  06
+ | Destination     :  LENS               | Durée du trajet : 21 | Heure de depart :  01 | Heure d'arrivée : 22 Nombre d'arret  :  01
+ | Destination     :  ARRAS              | Durée du trajet : 21 | Heure de depart :  01 | Heure d'arrivée : 22 Nombre d'arret  :  01
+ | Destination     :  BREST              | Durée du trajet : 20 | Heure de depart :  02 | Heure d'arrivée : 22 Nombre d'arret  :  03
+ | Destination     :  TOULOUSE           | Durée du trajet : 15 | Heure de depart :  07 | Heure d'arrivée : 22 Nombre d'arret  :  10
+ | Destination     :  ANGERS             | Durée du trajet : 20 | Heure de depart :  02 | Heure d'arrivée : 22 Nombre d'arret  :  02
+ | Destination     :  BRUXELLES          | Durée du trajet : 21 | Heure de depart :  01 | Heure d'arrivée : 22 Nombre d'arret  :  00
+ | Destination     :  LONDRES            | Durée du trajet : 19 | Heure de depart :  03 | Heure d'arrivée : 22 Nombre d'arret  :  00
+ | Destination     :  TOULON             | Durée du trajet : 17 | Heure de depart :  05 | Heure d'arrivée : 22 Nombre d'arret  :  09
+ | Destination     :  NICE               | Durée du trajet : 15 | Heure de depart :  07 | Heure d'arrivée : 22 Nombre d'arret  :  10
+ | Destination     :  CANNES             | Durée du trajet : 16 | Heure de depart :  06 | Heure d'arrivée : 22 Nombre d'arret  :  09
+ | Destination     :  ASTON              | Durée du trajet : 18 | Heure de depart :  05 | Heure d'arrivée : 23 Nombre d'arret  :  01
+ | Destination     :  SAINTE             | Durée du trajet : 18 | Heure de depart :  05 | Heure d'arrivée : 23 Nombre d'arret  :  03
+ | Destination     :  MENTON             | Durée du trajet : 15 | Heure de depart :  08 | Heure d'arrivée : 23 Nombre d'arret  :  03
+ | Destination     :  GRENOBLE           | Durée du trajet : 19 | Heure de depart :  04 | Heure d'arrivée : 23 Nombre d'arret  :  07
+ | Destination     :  SAINTMALO          | Durée du trajet : 20 | Heure de depart :  03 | Heure d'arrivée : 23 Nombre d'arret  :  02
+ | Destination     :  LORIENT            | Durée du trajet : 20 | Heure de depart :  03 | Heure d'arrivée : 23 Nombre d'arret  :  03
+ | Destination     :  NANTES             | Durée du trajet : 20 | Heure de depart :  03 | Heure d'arrivée : 23 Nombre d'arret  :  05
+ | Destination     :  BERLIN             | Durée du trajet : 18 | Heure de depart :  05 | Heure d'arrivée : 23 Nombre d'arret  :  06
+ | Destination     :  CHERBOURG          | Durée du trajet : 20 | Heure de depart :  03 | Heure d'arrivée : 23 Nombre d'arret  :  01
+ | Destination     :  PRAGUE             | Durée du trajet : 03 | Heure de depart :  20 | Heure d'arrivée : 23 Nombre d'arret  :  00
+ | Destination     :  ANNECY             | Durée du trajet : 05 | Heure de depart :  05 | Heure d'arrivée : 00 Nombre d'arret  :  01
+ | Destination     :  GENEVE             | Durée du trajet : 05 | Heure de depart :  05 | Heure d'arrivée : 00 Nombre d'arret  :  00
+ | Destination     :  LAUSANNE           | Durée du trajet : 05 | Heure de depart :  05 | Heure d'arrivée : 00 Nombre d'arret  :  00
+ | Destination     :  BERNE              | Durée du trajet : 06 | Heure de depart :  06 | Heure d'arrivée : 00 Nombre d'arret  :  00
+ | Destination     :  SAINT GAL          | Durée du trajet : 07 | Heure de depart :  07 | Heure d'arrivée : 00 Nombre d'arret  :  00
+ | Destination     :  LUCERNE            | Durée du trajet : 06 | Heure de depart :  06 | Heure d'arrivée : 00 Nombre d'arret  :  00
+ | Destination     :  ROME               | Durée du trajet : 15 | Heure de depart :  15 | Heure d'arrivée : 00 Nombre d'arret  :  01
+ | Destination     :  VENISE             | Durée du trajet : 08 | Heure de depart :  08 | Heure d'arrivée : 00 Nombre d'arret  :  05
+ | Destination     :  VIENNE             | Durée du trajet : 09 | Heure de depart :  10 | Heure d'arrivée : 01 Nombre d'arret  :  01
+ | Destination     :  AMSTERDAM          | Durée du trajet : 02 | Heure de depart :  03 | Heure d'arrivée : 01 Nombre d'arret  :  01
