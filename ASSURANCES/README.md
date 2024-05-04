@@ -1,4 +1,4 @@
-# EXERCICE de déclaration d’un fichier SÉQUENTIEL.
+# EXERCICE de déclaration d’un fichier SÉQUENTIEL
 
 Créer un programme avec la déclaration du fichier ‘assurances.dat’.
 Après avoir stocké l’ensemble des enregistrements pour traitement.
